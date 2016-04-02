@@ -1,8 +1,7 @@
 ---
 title: Hexo 安装小记
 date: 2016-03-30 23:25:14
-tags: 
-  - Hexo
+tags: [Hexo]
 categories: 技术
 ---
 
