@@ -6,8 +6,5 @@ node_modules/
 public/
 .deploy*/
 *.[oa]
-<<<<<<< HEAD
 *~
-=======
-*~
->>>>>>> d08c1824dbd38e521b43aec1f4f09370d3d16a97
+
