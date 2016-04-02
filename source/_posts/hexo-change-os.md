@@ -1,5 +1,5 @@
 ---
-title: hexo change os
+title: hexo 换终端/换电脑小记
 date: 2016-04-02 14:00:53
 tags: [hexo]
 categories: 技术
