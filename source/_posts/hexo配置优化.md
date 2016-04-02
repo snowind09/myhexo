@@ -1,8 +1,7 @@
 ---
 title: Hexo 配置小记
 date: 2016-04-01 00:06:16
-tags: 
-   - Hexo
+tags: [Hexo]
 categories: 技术
 ---
 
