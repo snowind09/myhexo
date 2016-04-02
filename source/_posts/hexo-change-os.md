@@ -7,6 +7,9 @@ categories: 技术
 ## 主要思路
 1. [参考第四节](http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more)
 2. 流程图
+![](http://7xshxx.com2.z0.glb.clouddn.com/hexo_process.png)
+
+3. 对于多终端来说，按照git pull->编辑博客->git push->hexo g -d的顺序就可以实现多终端同步效果
 
 ## 实施前提
 
@@ -20,7 +23,7 @@ categories: 技术
 
  在github上新增repo，例如名为myhexo，地址为github.com/xxx/myhexo
 
-2. 创建本地repo
+2. 在**旧终端**中创建本地repo
  
  进入本地hexo目录
 
@@ -39,7 +42,7 @@ categories: 技术
    
   > *~
  
-3. 创建远程分支连接
+3. 在**旧终端**中创建远程分支连接
 
    >git remote add origin git@github.com:xxx/myhexo.git
    >git remote -v 
@@ -48,22 +51,22 @@ categories: 技术
    >origin    git@github.com:XXX/myhexo.git (fetch)
    >origin    git@github.com:XXX/myhexo.git (push)
    
-4. 提交本地文件至远程repo
+4. 在**旧终端**中提交本地文件至远程repo
 
   >git push -u origin master
 
 5. 换了终端以后
 
-  安装node、git环境，配置github sshkey
+  在**新终端**中安装node、git环境，配置github sshkey
  
-  在新终端创建空目录作为hexo工作目录，从远程仓库中clone出之前备份的repo
+  在**新终端**中创建空目录作为hexo工作目录，从远程仓库中clone出之前备份的repo
   
   > mkdir hexo
   > cd hexo
   > git init
   > git clone git@github.com:xxx/myhexo.git
 
-  git clone成功后，本地出现myhexo文件夹，开始安装hexo环境
+  在**新终端**中git clone成功后，本地出现myhexo文件夹，开始安装hexo环境
    
   > cd myhexo
   > npm install hexo
@@ -75,7 +78,7 @@ categories: 技术
   > hexo g
   > hexo server
 
-6. 在新终端继续使用和管理hexo
+6. 在**新终端**中继续使用和管理hexo
     
    新建文章并修改
   
@@ -92,7 +95,7 @@ categories: 技术
  
   > hexo g -d
 
-7. 切换终端使用hexo
+7. 切换至**旧终端**使用hexo
 
    更新网站原始文件
 
