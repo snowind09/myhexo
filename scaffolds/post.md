@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+tags: [Hexo]
+categories: 技术
 ---

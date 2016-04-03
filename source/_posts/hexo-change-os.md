@@ -11,6 +11,8 @@ categories: 技术
 
 3. 对于多终端来说，按照git pull->编辑博客->git push->hexo g -d的顺序就可以实现多终端同步效果
 
+<!--more-->
+
 ## 实施前提
 
 1. 旧终端/电脑已安装hexo环境
@@ -18,6 +20,7 @@ categories: 技术
 3. 旧终端/电脑能通过hexo g -d正常发布至远程xxx.github.io
 
 ## 实施步骤
+
 
 1. 新建远程repo
 
