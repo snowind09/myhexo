@@ -25,8 +25,8 @@ date: 2016-04-03 23:44:40
 ![](http://7xshxx.com2.z0.glb.clouddn.com/IO_diff.jpg)
 
 ## 多路复用模型(IO Multiplexing)
-  * 多路复用I/O模型是**同步阻塞**的，这里是从单个I/O线程的角度来说
-  * 多路复用I/O**阻塞**在select、epoll这样的系统调用上，而不是阻塞在I/O系统调用recvfrom上
+  * 多路复用I/O模型是**同步阻塞**的，这里是从应用进程的角度来说
+  * 多路复用I/O**阻塞**在select、epoll这样的系统调用上，而不是阻塞在I/O系统调用recvfrom上，因此也被称为**非阻塞I/O**(Non-blocking I/O)
 ![](http://7xshxx.com2.z0.glb.clouddn.com/duolufuyong.jpg?imageView/2/w/700/)
   * 对于单个I/O操作，多路复用并不比阻塞I/O有优势，反而增加了一次系统调用
   * 多路复用I/O的优势体现在同时处理多个文件描述符输入输出操作、多个套接字操作的时候，有任何一个准备就绪，select就可以返回（从并发的角度看，也有人认为这是“异步”，但从单个用户线程的角度看，仍处于等待数据或者拷贝数据的状态）
